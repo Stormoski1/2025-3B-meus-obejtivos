@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --fonte-primaria:"Bebas Neue", sans-serif;
+    --fonte-segundaria: "Inter", sans-serif;
+--verde: #0d1b2aff;
+--azuul: #1b263bff;
+--azul-claro: #415a77ff;
+--branco: rgb(73, 123, 189);
+--preto: rgb(13, 14, 13);
+}
+body{
+    background-color: var(--azul-claro);
+    color:var(--preto);
+    font-family:var(--fonte-primaria);
+    font-weight: 400;
+    font-style: normal
+
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    font-family: var(--fonte-secundaria);
+    text-align: left;
+    width: 100%;
+    font-size: 36px;
+ }
+
+ span{
+    color:var(--azul-escuro);
+ }
+
+ .botao{
+    font-family: var(--fonte-primaria);
+    background-color: var(--azul-marinho);
+    color:var(--preto);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--azul);
+    border-left: 4px solid var(--azul);
+    border-right: 4px solid var(--azul);
+    border-top: none;
+ }
+
+ .botoes{
+    display: block;
+ }
+
+ .botao:first-child{
+    border-radius: 40px 40px 0 0;
+ }
+
+ .botao:last-child{
+    border-radius: 0 0 40px 40px;
+ }
+
+ .ativo{
+    background-color: var(--azul-escuro);
+    border-bottom: var(--azul);
+ }
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+}
+
+}
